@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Tetris": {
+    "Snake": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -8,7 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:2626"
+      "applicationUrl": "https://localhost:1948"
     },
     "IIS Express": {
       "commandName": "IISExpress",

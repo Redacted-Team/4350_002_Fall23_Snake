@@ -1,4 +1,4 @@
-﻿namespace Tetris
+﻿namespace Snake
 {
     public class GameInfo
     {
