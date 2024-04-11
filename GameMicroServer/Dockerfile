@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["GameMicroServer/GameMicroServer.csproj", "GameMicroServer/"]
-RUN dotnet restore "GameMicroServer/GameMicroServer.csproj"
+COPY ["GameMicroServer/Snake.csproj", "SnakeMicroService/"]
+RUN dotnet restore "SnakeMicroService/Snake.csproj"
 COPY . .
 WORKDIR "/src/GameMicroServer"
-RUN dotnet build "GameMicroServer.csproj" -c Release -o /app/build
+RUN dotnet build "Snake.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "GameMicroServer.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "Snake.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "GameMicroServer.dll"]
+ENTRYPOINT ["dotnet", "Snake.dll"]
