@@ -1,5 +1,5 @@
-# GameMicroService
-### A Team Bobby Project
+# Snake
+### A Team Redacted Project
 ### Members:
 > Kurt Brewer, Josh Rucevice, Charlie Shahan,
 > Ethan Webb, Ethan Hensley, Patrick Vergason, Bryson Brandon
@@ -10,8 +10,8 @@
 This is a microservice that returns game info in JSON format to the [BOBBY Project](https://github.com/chrisseals98/BOBBY).
 
 ### Project Structure:
-* The application handles HTTP calls in the microController.cs file in the /GameMicroServer/Controllers directory.
-* It only handles an HTTP Get call to the path /Micro. So if the application was running locally, you would call [http://localhost/Micro](http://localhost/Micro).
+* The application handles HTTP calls in the SnakeController.cs file in the /Snake/Controllers directory.
+* It only handles an HTTP Get call to the path /Snake. So if the application was running locally, you would call [http://localhost/Snake](http://localhost/Snake).
 * This application is deployed alongside the BucStop project with docker compose, see [BOBBY Project](https://github.com/chrisseals98/BOBBY) for more details.
 
 ### Help
