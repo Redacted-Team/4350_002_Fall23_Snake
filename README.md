@@ -7,7 +7,7 @@
 #### Fall 2023, East Tennessee State University
 
 ### Overview:
-This is a microservice that returns game info in JSON format to the [BOBBY Project](https://github.com/chrisseals98/BOBBY).
+This is a microservice that returns snake game info to Bucstop
 
 ### Project Structure:
 * The application handles HTTP calls in the SnakeController.cs file in the /Snake/Controllers directory.
